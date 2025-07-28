@@ -1,11 +1,15 @@
-# Write a program to check if a number is a prime number
+# Write a program to check armstrong number.
 
 num = int(input("Enter the number: "))
-count = 0
-for i in range(1, num + 1):
-    if num % i == 0:
-        count = count + 1
-if count == 2:
-    print(num,"is prime number")
+sum = 0
+temp = num
+
+while temp > 0:
+    digit = temp%10
+    sum += digit**3
+    temp //= 10
+
+if sum == num:
+    print(num,"is an Armstrong")
 else:
-    print(num,"is not a prime number")
+    print(num,"is not an Armstrong")
