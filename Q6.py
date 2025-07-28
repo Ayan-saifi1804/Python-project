@@ -8,6 +8,8 @@ print("4- Division")
 option = int(input("Choose an Operator: "))
 
 result = 0
+#added optionName to show in result which operation is performed
+optionName = ""
 
 if(option in [1,2,3,4]):
     num1 = int(input("Enter First Number: "))
@@ -15,14 +17,18 @@ if(option in [1,2,3,4]):
 
     if(option == 1):
         result = num1 + num2
+        optionName = "Addition"
     elif(option == 2):
         result = num1 - num2
+        optionName = "Subtraction"
     elif(option == 3):
         result = num1 * num2
+        optionName = "Muiltiplication"
     elif(option == 4):
         result = num1 / num2
+        optionName = "Division"
 
 else:
     print("Invalid operation entered.")
 
-print("The result of the operation is {}".format(result))
+print("The result of the "+optionName+" operation is {}".format(result))
