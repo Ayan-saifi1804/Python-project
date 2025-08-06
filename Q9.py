@@ -40,7 +40,7 @@ while True:
 
     elif choice == '4':
         print("Exiting... Thank you!")
-        False
+        break
 
     else:
         print("Invalid choice. Please select 1, 2, 3, or 4.")
